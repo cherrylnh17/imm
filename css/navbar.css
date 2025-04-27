@@ -205,9 +205,14 @@ body{
         display: flex;
     }
 
+    .navbar .logoNav{
+        flex: 4;
+    }
+    
     .navbar .joinUs{
         display: flex;
         flex: 2;
+        text-align: center;
     }
     
     .namaLogo span:nth-child(3){
