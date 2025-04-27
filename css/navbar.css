@@ -179,14 +179,6 @@ body{
         display: none;
     }
 
-    .namaLogo span:nth-child(2){
-        display: none;
-    }
-
-    .namaLogo span:nth-child(3){
-        display: block;
-    }
-
     .navbar ul{
         display: none;
     }
@@ -203,5 +195,13 @@ body{
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     body{
         font-size: 12px;
+    }
+
+        .namaLogo span:nth-child(2){
+        display: none;
+    }
+
+    .namaLogo span:nth-child(3){
+        display: block;
     }
   }
