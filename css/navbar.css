@@ -197,10 +197,18 @@ body{
         font-size: 12px;
     }
 
-        .namaLogo span:nth-child(2){
+    .namaLogo span:nth-child(2){
         display: none;
     }
 
+    .navbar ul{
+        display: flex;
+    }
+
+    .navbar .joinUs{
+        display: flex;
+    }
+    
     .namaLogo span:nth-child(3){
         display: block;
     }
