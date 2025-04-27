@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.navbar{
+    position: sticky;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #111010 ;
+}
+
+.logoNav{
+    padding-left: 1em;
+}
+
+.navbar .logoNav {
+    display: flex;
+    flex: 3;
+}
+
+.navbar .logoNav img{
+    width: 4em;
+}
+
+.navbar .logoNav .namaLogo{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.namaLogo span:nth-child(1),
+.namaLogo span:nth-child(2),
+.namaLogo span:nth-child(3){
+    font-weight: 600;
+}
+
+.namaLogo span:nth-child(3){
+    display: none;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 5em;
+    text-align: center;
+    flex: 6;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 12px;
+    font-weight: 800;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.navbar .active::before{
+    width: 100%;
+}
+
+
+.joinUs{
+    position: relative;
+    overflow: hidden;
+    padding: 1em;
+    margin-right: 2em;
+    background: linear-gradient(90deg,rgba(245, 143, 71, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(97, 0, 0, 1) 100%);
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background 1s ease-in-out ;
+    will-change: background;
+    text-align: center;
+    flex: 1;
+}
+
+
+.joinUs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 03), transparent);
+    transition: left 0.7s ease-in-out;
+    z-index: 1;
+}
+
+.joinUs:hover{
+    background: linear-gradient(90deg,rgba(245, 143, 71, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(97, 0, 0, 1) 100%);
+}
+
+.joinUs:hover::before{
+    left: 100%;
+}
+
+.joinUs i{
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.joinUs span{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+
+.hamburger-menu {
+    margin: 2em;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+  }
+
+  .bar-top,
+  .bar-middle,
+  .bar-bottom {
+    height: 4px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 2px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  .hamburger-menu:active .bar-top {
+    transform: rotate(45deg);
+  }
+  .hamburger-menu:active .bar-middle {
+    transform:translateX(1rem);
+    opacity: 0;
+  }
+  .hamburger-menu:active .bar-bottom {
+    transform: rotate(-45deg);
+  }
+  
+
+/* handphone */
+
+@media screen and (max-width: 767px) {
+
+    body{
+        font-size: 10px;
+    }
+
+    .navbar .joinUs{
+        display: none;
+    }
+
+    .namaLogo span:nth-child(2){
+        display: none;
+    }
+
+    .namaLogo span:nth-child(3){
+        display: block;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: flex;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body{
+        font-size: 12px;
+    }
+  }
