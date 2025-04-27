@@ -207,6 +207,7 @@ body{
 
     .navbar .joinUs{
         display: flex;
+        flex: 2;
     }
     
     .namaLogo span:nth-child(3){
