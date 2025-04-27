@@ -17,13 +17,10 @@ body{
     border-bottom: 2px solid #111010 ;
 }
 
-.logoNav{
-    padding-left: 1em;
-}
 
 .navbar .logoNav {
     display: flex;
-    flex: 3;
+    padding-left: 1em;
 }
 
 .navbar .logoNav img{
@@ -175,11 +172,20 @@ body{
         font-size: 10px;
     }
 
-    .navbar .joinUs{
+
+    .namaLogo span:nth-child(2){
         display: none;
     }
 
+    .namaLogo span:nth-child(3){
+        display: block;
+    }
+
     .navbar ul{
+        display: none;
+    }
+
+    .navbar .joinUs{
         display: none;
     }
 
@@ -201,6 +207,11 @@ body{
         display: none;
     }
 
+    .namaLogo span:nth-child(3){
+        display: block;
+    }
+
+    
     .navbar ul{
         display: flex;
     }
@@ -212,10 +223,7 @@ body{
     .navbar .joinUs{
         display: flex;
         flex: 2;
-        text-align: center;
-    }
-    
-    .namaLogo span:nth-child(3){
-        display: block;
+        align-items: center;
+        justify-content:center;
     }
   }
