@@ -1,4 +1,110 @@
 body{
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
+
+
+.about-me{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+    gap: 3em;
+    background: hsl(0, 12%, 93%);
+    height: 200vh;
+}
+
+.detail-about-me{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 3em;
+}
+
+.detail-about-me h4{
+    order: 2;
+    font-size: 2em;
+    margin: 0;
+    color: rgb(55, 134, 19);
+    text-shadow: 1px 1px 2px #4b4444;
+}
+
+.detail-about-me span{
+    order: 1;
+    color: rgb(230, 214, 0);
+    font-size: .8em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.detail-about-me p{
+    order: 3;
+    line-height: 1.5;
+    color: #4b4444;
+}
+
+.lokasi-about-me{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.detail-lokasi-about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-lokasi-about-me span:nth-child(1){
+    font-size: 1.5em;
+    color: rgb(55, 134, 19);
+    font-weight: 800;
+    margin: .5em;
+}
+
+.iframe-lokasi-imm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.lainnya-lokasi-about-me{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
+.lainnya-lokasi-about-me details{
+    border-bottom: 5px solid #dbd3d3;
+    padding: .5em;
+}
+
+.lainnya-lokasi-about-me details a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.lainnya-lokasi-about-me details summary{
+    position: relative;
+    cursor: pointer;
+    padding: .5em;
+}
+
+.lainnya-lokasi-about-me details summary i{
+    margin-right: .4em;
+}
+
+.lainnya-lokasi-about-me details summary::marker{
+    content: "";
+}
+
+.lainnya-lokasi-about-me details summary::-webkit-details-marker{
+    display: none;
+}
+
