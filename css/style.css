@@ -52,7 +52,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0;
-    height: 60dvh;
+    height: 60vh;
 }
 
 .detail-lokasi-about-me span:nth-child(1){
