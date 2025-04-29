@@ -141,3 +141,12 @@ body{
         grid-template-rows: repeat(2, min-content);
     }
   }
+
+
+
+
+@media screen and (min-width: 768px) {
+  .about-me{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
