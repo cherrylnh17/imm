@@ -7,7 +7,7 @@ body{
 
 .about-me{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1.5fr) repeat(1,1fr);
     padding: 2em;
     gap: 3em;
 }
@@ -52,7 +52,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0;
-    height: 60dvh;
+    height: auto;
 }
 
 .detail-lokasi-about-me span:nth-child(1){
@@ -66,9 +66,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
     overflow: hidden;
+    width: 90%;
+    height: auto;
+}
+
+.iframe-lokasi-imm iframe{
+    width: 35em;
+    height: 20em;
+    margin: 1em;
 }
 
 .lainnya-lokasi-about-me{
@@ -107,46 +113,3 @@ body{
 }
 
 
-
-
-
-/* Responsive */
-
-@media screen and (max-width: 767px) {
-
-    body{
-        font-size: 10px;
-    }
-
-
-    .about-me{
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(2, min-content);
-    }
-
-
-
-}
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1248px) {
-    body{
-        font-size: 12px;
-    }
-
-    .about-me{
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(2, min-content);
-    }
-  }
-
-
-
-
-@media screen and (min-width: 768px) {
-  .about-me{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
