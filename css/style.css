@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 
@@ -67,7 +68,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -113,3 +114,97 @@ body{
 }
 
 
+/* bagian card instagram */
+
+.instagram-imm{
+    padding: 0 5em 0 5em;
+}
+
+.content-instagram-imm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-instagram-imm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+}
+
+.logo-profil-instagram-imm img{
+    width: 6em;
+}
+
+.text-profil-instagram-imm{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    gap: .2em;
+}
+
+.text-profil-instagram-imm span:nth-child(1){
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.text-profil-instagram-imm span:nth-child(2){
+    font-size: .8em;
+}
+
+.text-profil-instagram-imm span:nth-child(3){
+    font-size: .8em;
+    display: none;
+}
+
+
+.post-instagram-imm{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.post-instagram-imm img{
+    width: 12.5em;
+    height: auto;
+}
+
+.footer-instagram-imm{
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+}
+
+.footer-instagram-imm a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-instagram-imm div:nth-child(1),
+.footer-instagram-imm div:nth-child(2){
+    padding: .7em;
+    font-size: 13px;
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.footer-instagram-imm div:nth-child(1){
+    background: #4b4444;
+}
+
+.footer-instagram-imm div:nth-child(1):hover{
+    background: #706464;
+}
+
+.footer-instagram-imm div:nth-child(2){
+    background: #0556c0;
+}
+
+.footer-instagram-imm div:nth-child(2):hover{
+    background: #156bdd;
+}
