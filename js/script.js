@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// buat div diarahkan ke href
+const clickableDivs = document.querySelectorAll(".href-class");
+
+clickableDivs.forEach((div) => {
+  div.addEventListener("click", function () {
+    window.open(this.dataset.href, "_blank");
+  });
+});
+
+
+
+
 
 // bagian berita
 const sliderContainer = document.querySelector('.news-slider-container');
@@ -65,7 +77,6 @@ function getPositionX(event) {
 function dragStart(event) {
     isDragging = true;
     startPosition = getPositionX(event);
-    // Get the current translateX value
     const transformMatrix = window.getComputedStyle(slider).getPropertyValue('transform');
     if (transformMatrix !== 'none') {
         currentTranslate = parseFloat(transformMatrix.split(',')[4]);
@@ -88,7 +99,6 @@ function dragEnd(event) {
     isDragging = false;
     const movedBy = currentTranslate - prevTranslate;
 
-    // Determine the threshold to change slide
     if (Math.abs(movedBy) > 50) {
         if (movedBy < 0 && currentIndex < itemCount - 3) {
             currentIndex++;
