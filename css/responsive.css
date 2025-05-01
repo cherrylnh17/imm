@@ -6,6 +6,10 @@
     }
 
 
+    .namaLogo span {
+        font-size: 0.7em; 
+      }
+
     .about-me{
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(2, min-content);
@@ -41,9 +45,12 @@
         font-size: 8px;
     }
 
+    .news-item {
+        flex: 0 0 calc(95% / 2); 
+    }
+
 
 }
-
 
 
 
@@ -52,13 +59,18 @@
         font-size: 12px;
     }
 
+
+    .namaLogo span {
+        font-size: 0.9em; 
+      }
+
     .about-me{
         grid-template-columns: repeat(2, 1fr);
     }
 
     .iframe-lokasi-imm iframe{
-        width: 25em;
-        height: 15em;
+        width: 90%;
+        height: 30em;
         margin: 1em;
     }
 
