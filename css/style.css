@@ -6,6 +6,13 @@ body{
 }
 
 
+
+.namaLogo span {
+    font-family: cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 .about-me{
     display: grid;
     grid-template-columns: repeat(1, 1.5fr) repeat(1,1fr);
@@ -73,44 +80,9 @@ body{
 }
 
 .iframe-lokasi-imm iframe{
-    width: 35em;
-    height: 20em;
+    width: 90%;
+    height: 25em;
     margin: 1em;
-}
-
-.lainnya-lokasi-about-me{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.lainnya-lokasi-about-me details{
-    border-bottom: 5px solid #dbd3d3;
-    padding: .5em;
-}
-
-.lainnya-lokasi-about-me details a{
-    color: #000;
-    text-decoration: none;
-}
-
-
-.lainnya-lokasi-about-me details summary{
-    position: relative;
-    cursor: pointer;
-    padding: .5em;
-}
-
-.lainnya-lokasi-about-me details summary i{
-    margin-right: .4em;
-}
-
-.lainnya-lokasi-about-me details summary::marker{
-    content: "";
-}
-
-.lainnya-lokasi-about-me details summary::-webkit-details-marker{
-    display: none;
 }
 
 
@@ -207,4 +179,44 @@ body{
 
 .footer-instagram-imm div:nth-child(2):hover{
     background: #156bdd;
+}
+
+/* according */
+
+.accordion-body a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+/* bagian berita */
+.news-slider-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-item {
+    flex: 0 0 calc(100% / 3); 
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.news-item:last-child {
+    margin-right: 0;
 }
