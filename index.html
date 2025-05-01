@@ -4,53 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMM Insan Kamil - Umku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+
     <link rel="shortcut icon" href="img/logo.png" type="images/png">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logoNav">
-            <img src="img/logo.png" alt="Insan Kamil Umku">
-            <div class="namaLogo">
-                <span>IMM Insan Kamil</span>
-                <span>UNIVERSITAS MUHAMMADIYAH KUDUS</span>
-                <span>UMKU</span>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom border-2 border-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="navbar-brand logo-Nav d-flex align-items-center">
+                <img src="img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                <div class="namaLogo ms-2">
+                    <span>IMM Insan Kamil</span>
+                    <span>UMKU</span>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Profil</a>
+                    <a class="nav-link" href="#">Kegiatan</a>
+                    <a class="nav-link" href="#">Kontak</a>
+                </div>
             </div>
         </div>
-        <ul>
-            <li>
-                <a href="index.html" id="HomeLink" data-page="/index.html" class="active">Home</a>
-            </li>
-            <li>
-                <a href="#" id="ProfilLink" data-page="">Profil</a>
-            </li>
-            <li>
-                <a href="#" id="KegiatanLink" data-page="">Kegiatan</a>
-            </li>
-            <li>
-                <a href="#" id="KontakLink" data-page="">Kontak</a>
-            </li>
-        </ul>
-        <div class="joinUs" data-href="https://www.instagram.com/klik_umku/">
-            <i class="fas fa-file-alt"></i>
-            <span>Join Us</span>
-        </div>
-        <div class="hamburger-menu">
-            <div class="bar-top"></div>
-            <div class="bar-middle"></div>
-            <div class="bar-bottom"></div>
-        </div>
     </nav>
-    <div class="mobileMenu">
-        <a href="">Home</a>
-        <a href="">Profil</a>
-        <a href="">Kegiatan</a>
-        <a href="">Kontak</a>
-    </div>
 
 
     <section class="about-me">
@@ -73,35 +61,55 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.6061774616091!2d110.82451188332092!3d-6.806441545767516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c4ba165c352f%3A0x83c0396a1cda8978!2sKomisariat%20IMM%20Ar-Rabbani%20UMKU!5e0!3m2!1sid!2sid!4v1745834912416!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="lainnya-lokasi-about-me">
-                <details name="detail-lokasi">
-                    <summary>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Lokasi Kampus 1
-                    </summary>
-                    <a href="">Jl. Ganesha Raya No.I, Purwosari, Kec. Kota Kudus, Kabupaten Kudus, Jawa Tengah 59316</a>
-                </details>
-                <details name="detail-lokasi">
-                    <summary>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Lokasi Kampus 2
-                    </summary>
-                    <a href="">Jl. Raya Kudus – Jepara No.519, Pereng, Prambatan Lor, Kec. Kaliwungu, Kabupaten Kudus, Jawa Tengah 59332</a>
-                </details>
-                <details name="detail-lokasi">
-                    <summary>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Lokasi Komisariat Insan Kamil
-                    </summary>
-                    <a href="">Jl. Ganesha Raya No.I, Purwosari, Kec. Kota Kudus, Kabupaten Kudus, Jawa Tengah 59316</a>
-                </details>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa-solid fa-location-dot"></i>
+                            &nbsp; Lokasi Kampus 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a href="">Jl. Ganesha Raya No.I, Purwosari, Kec. Kota Kudus, Kabupaten Kudus, Jawa Tengah 59316</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <i class="fa-solid fa-location-dot"></i>
+                            &nbsp; Lokasi Kampus 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a href="">Jl. Raya Kudus – Jepara No.519, Pereng, Prambatan Lor, Kec. Kaliwungu, Kabupaten Kudus, Jawa Tengah 59332</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <i class="fa-solid fa-location-dot"></i>
+                            &nbsp; Lokasi Kamisariat Insan Kamil
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a href="">Jl. Ganesha Raya No.I, Purwosari, Kec. Kota Kudus, Kabupaten Kudus, Jawa Tengah 59316</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="instagram-imm">
         <div class="content-instagram-imm">
-            <div class="profil-instagram-imm">
+            <div class="profil-instagram-imm border-top border-2 border-tertiary">
                 <div class="logo-profil-instagram-imm">
                     <img src="img/logo.png" alt="">
                 </div>
@@ -161,8 +169,82 @@
     </section>
 
 
+    <section class="news-imm">
+        <div class="news-slider-container border border-2 border-tertiary">
+            <div class="news-slider" id="newsSlider">
+                <div class="news-item card">
+                    <img src="img/news.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-tittle">Berita 1</h5>
+                        <p class="card-text">Isi berita</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">3 menit lalu</small>
+                    </div>
+                </div>
+                
+                <div class="news-item card">
+                    <img src="img/news.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-tittle">Berita 2</h5>
+                        <p class="card-text">Isi berita</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">3 menit lalu</small>
+                    </div>
+                </div>
+
+                <div class="news-item card">
+                    <img src="img/news.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-tittle">Berita 3</h5>
+                        <p class="card-text">Isi berita</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">3 menit lalu</small>
+                    </div>
+                </div>
+
+                <div class="news-item card">
+                    <img src="img/news.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-tittle">Berita 4</h5>
+                        <p class="card-text">Isi berita</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">3 menit lalu</small>
+                    </div>
+                </div>
+
+                <div class="news-item card">
+                    <img src="img/news.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-tittle">Berita 5</h5>
+                        <p class="card-text">Isi Berita</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">3 menit lalu</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </section>
 
 
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+          <span class="text-muted">© 2025 IMM Insan Kamil Umku</span>
+        </div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
