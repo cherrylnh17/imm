@@ -220,3 +220,10 @@ body{
 .news-item:last-child {
     margin-right: 0;
 }
+
+
+
+/* bagian href-class buat pointer */
+.href-class{
+    cursor: pointer;
+}
