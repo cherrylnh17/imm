@@ -49,6 +49,10 @@ body{
     color: #4b4444;
 }
 
+.detail-about-me a{
+    order: 4;
+}
+
 .lokasi-about-me{
     display: flex;
     flex-direction: column;
