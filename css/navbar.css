@@ -9,3 +9,8 @@ body{
 .navbar-nav a{
     margin-left: 5em;
 }
+
+
+.navbar{
+    font-weight: bold;
+}
