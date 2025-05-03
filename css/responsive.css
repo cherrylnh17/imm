@@ -81,3 +81,8 @@
   }
 
 
+  @media screen and (min-width: 1248px){
+    .hubungiKami{
+        padding: 5em;
+    } 
+  }
