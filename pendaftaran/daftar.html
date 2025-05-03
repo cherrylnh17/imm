@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/daftar.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link rel="shortcut icon" href="../img/logo.png" type="images/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,15 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="../index.html">Home</a>
-                    <a class="nav-link" href="#">Profil</a>
+                    <a class="nav-link" href="../profil/profil.html">Profil</a>
                     <a class="nav-link" href="#">Kegiatan</a>
-                    <a class="nav-link" href="#">Kontak</a>
+                    <a class="nav-link" href="../kontak/kontak.html">Kontak</a>
                 </div>
             </div>
         </div>
     </nav>
-      
-      
 
     <form action="https://script.google.com/macros/s/AKfycbxxNpbHGvPymRAePNpzm0lumfOBVbfFf_94YQt_T2gnmgTjYKwr3YqOcj4TY66EkWvA/exec" class="row m-2 d-flex justify-content-center" method="post">
         <div class="nama col-md-12">
@@ -53,7 +52,10 @@
         </div>
         <div class="nim-mahasiswa col-md-6">
             <label for="nimMhs" class="form-label fw-bold m-2">NIM</label>
-            <input type="number" class="form-control" name="nimMhs" id="nimMhs" value="520" required>
+            <div class="input-group">
+                <span class="input-group-text">520</span>
+                <input type="number" class="form-control" name="nimMhs" id="nimMhs" required>
+            </div>
         </div>
         <div class="tempat-lahir col-md-6">
             <label for="tempatLahir" class="form-label fw-bold m-2">Tempat</label>
@@ -73,7 +75,10 @@
         </div>
         <div class="nomor-hp col-md-6">
             <label for="nomorHp" class="form-label fw-bold m-2">Nomor Hp</label>
-            <input type="number" class="form-control no-spinners" id="nomorHp" name="nomorHp" value="08" required>
+            <div class="input-group">
+                <span class="input-group-text">08</span>
+                <input type="number" class="form-control no-spinners" id="nomorHp" name="nomorHp" required>
+            </div>
         </div>
         <div class="fakultas col-md-6">
             <label for="fakultas" class="form-label fw-bold m-2">Fakultas</label>
@@ -89,11 +94,11 @@
                 <option value="" disabled selected>-- Pilih Program Studi --</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-secondary col-md-4 mt-3">Kirim Pendaftaran</button>
+        <button type="submit" class="btn btn-secondary col-md-12 mt-3">Kirim Pendaftaran</button>
     </form>
 
     <div class="backHome row d-flex justify-content-center m-2">
-        <a href="../index.html" class="btn btn-primary col-md-4">Kembali</a>
+        <a href="../index.html" class="btn btn-primary col-md-12">Kembali</a>
     </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
       <script src="../js/daftar.js"></script>
