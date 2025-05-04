@@ -130,3 +130,6 @@ window.addEventListener('resize',() => {
     moveSlider();
     startAutoSlide();
 })
+
+
+AOS.init();
