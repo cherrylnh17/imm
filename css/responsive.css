@@ -6,9 +6,16 @@
     }
 
 
+
     .namaLogo span {
-        font-size: 0.7em; 
+        font-size: 0.7em !important; 
       }
+
+
+      .navbar-nav a{
+        font-size: 10px;
+    }
+
 
     .about-me{
         grid-template-columns: repeat(1, 100%);
@@ -49,6 +56,9 @@
         flex: 0 0 calc(95% / 2); 
     }
 
+    .waktuKomentarUser span{
+        font-size: 8px;
+    }
 
 }
 
@@ -61,8 +71,14 @@
 
 
     .namaLogo span {
-        font-size: 0.9em; 
+        font-size: 0.9em !important; 
       }
+
+      
+      .navbar-nav a{
+        font-size: 12px;
+    }
+
 
     .about-me{
         grid-template-columns: repeat(2, 1fr);
@@ -78,6 +94,10 @@
     .footer-instagram-imm div:nth-child(2){
         font-size: 10px;
     }
+
+    .waktuKomentarUser span{
+        font-size: 9px;
+    }
   }
 
 
@@ -85,4 +105,12 @@
     .hubungiKami{
         padding: 5em;
     } 
+
+    .waktuKomentarUser span{
+        font-size: 12px;
+    }
+
+
+   
+   
   }
