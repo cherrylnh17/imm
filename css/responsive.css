@@ -60,6 +60,10 @@
         font-size: 8px;
     }
 
+    .beritaTerbaru, .semuaBerita{
+        font-size: 10px;
+    }
+
 }
 
 
@@ -98,6 +102,11 @@
     .waktuKomentarUser span{
         font-size: 9px;
     }
+
+    .beritaTerbaru, .semuaBerita{
+        font-size: 12px;
+    }
+
   }
 
 
